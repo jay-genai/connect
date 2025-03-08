@@ -1,46 +1,111 @@
-# Getting Started with Create React App
+# Connect - AI-Powered MCN Agent Service
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Connect is an AI-powered platform that streamlines collaboration between creators and brands, automating complex processes to reduce setup time from days to minutes.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Fast Collaboration**: Reduce collaboration setup time from days to minutes with our streamlined process
+- **AI-Powered Automation**: Automatic responses to routine inquiries, legal advice, and content insights
+- **Availability Management**: Creators can set their availability, and brands can see it upfront
+- **Seamless Contracts**: Manage contracts, legal reviews, and payments all in one place
+- **Powerful Analytics**: Get detailed insights on content performance and audience engagement
 
-### `npm start`
+## Technology Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Frontend**: React.js, TypeScript, Material-UI
+- **State Management**: React Context API
+- **Routing**: React Router
+- **API Communication**: Axios
+- **Data Visualization**: Chart.js
+- **Form Handling**: Formik, Yup
+- **Date Manipulation**: date-fns
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Project Structure
 
-### `npm test`
+```
+connect/
+├── public/                # Static files
+├── src/                   # Source code
+│   ├── components/        # Reusable components
+│   │   ├── brand/         # Brand-specific components
+│   │   ├── common/        # Shared components
+│   │   └── creator/       # Creator-specific components
+│   ├── context/           # React context providers
+│   ├── hooks/             # Custom React hooks
+│   ├── pages/             # Page components
+│   │   ├── auth/          # Authentication pages
+│   │   ├── brand/         # Brand pages
+│   │   └── creator/       # Creator pages
+│   ├── services/          # API services
+│   ├── types/             # TypeScript type definitions
+│   └── utils/             # Utility functions
+├── package.json           # Dependencies and scripts
+└── tsconfig.json          # TypeScript configuration
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js (v14 or higher)
+- npm or yarn
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
 
-### `npm run eject`
+   ```
+   git clone https://github.com/yourusername/connect.git
+   cd connect
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+2. Install dependencies:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+3. Start the development server:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+   ```
+   npm start
+   ```
 
-## Learn More
+4. Open [http://localhost:3000](http://localhost:3000) to view the app in your browser.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Development
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Available Scripts
+
+- `npm start` - Runs the app in development mode
+- `npm test` - Launches the test runner
+- `npm run build` - Builds the app for production
+- `npm run eject` - Ejects from Create React App
+
+## Key Features Implementation
+
+### Creator Availability Management
+
+Creators can set their availability using the calendar component, which brands can view when making collaboration requests.
+
+### AI-Powered Responses
+
+The platform uses AI to automatically respond to routine inquiries, provide legal advice on contracts, and generate content insights.
+
+### Analytics Dashboard
+
+Both creators and brands have access to detailed analytics dashboards showing performance metrics, engagement rates, and growth insights.
+
+### Collaboration Workflow
+
+The platform streamlines the entire collaboration process from initial inquiry to contract signing, content creation, and performance analysis.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Material-UI for the component library
+- Chart.js for data visualization
+- date-fns for date manipulation
