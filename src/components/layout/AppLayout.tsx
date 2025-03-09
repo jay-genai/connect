@@ -315,7 +315,7 @@ const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
           flexGrow: 1,
           p: 3,
           width: { sm: `calc(100% - ${open ? drawerWidth : 0}px)` },
-          ml: { sm: open ? `${drawerWidth}px` : 0 },
+          ml: 0,
           transition: theme.transitions.create(["margin", "width"], {
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.leavingScreen,
